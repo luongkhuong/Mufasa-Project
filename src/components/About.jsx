@@ -20,7 +20,7 @@ const About = () => {
             <h1 className="about-us-title">About Us</h1>
             <div className="feature-divider"></div>
             <p className="about-us-subtitle">
-            Musafa empowers investors with cutting-edge tools and data-driven insights to build and manage successful portfolios.
+            Mufasa empowers investors with cutting-edge tools and data-driven insights to build and manage successful portfolios.
             With a seamless blend of technology and expertise, our platform simplifies market navigation, helping you make smarter investment decisions.
             Whether you're a veteran investor or just getting started, BullBear Hub is your trusted guide to financial success.
                 <br/><br/>
