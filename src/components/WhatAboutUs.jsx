@@ -3,7 +3,7 @@ import React from 'react';
 import '../styles/about.css'; 
 
 
-const AboutUsCard = (props) => {
+const WhatAboutUs = (props) => {
     return (
         <div className="card" style={{ width: '18rem' }}>
         
