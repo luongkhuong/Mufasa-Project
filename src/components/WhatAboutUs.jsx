@@ -27,4 +27,4 @@ const AboutUsCard = (props) => {
     );
   }
 
-export default AboutUsCard;
+export default WhatAboutUs;
