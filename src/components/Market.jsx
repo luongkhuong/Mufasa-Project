@@ -3,9 +3,9 @@ import '../styles/market.css';
 
 const Market = () => {
     const [stocks, setStocks] = useState([
-        { ticker: 'AAPL', price: 150, quantity: 0, selected: false },
-        { ticker: 'GOOGL', price: 2800, quantity: 0, selected: false },
-        { ticker: 'AMZN', price: 3400, quantity: 0, selected: false }
+        { ticker: 'AMZN', price: 150, quantity: 0, selected: false },
+        { ticker: 'AAPL', price: 2800, quantity: 0, selected: false },
+        { ticker: 'GOOGL', price: 3400, quantity: 0, selected: false }
     ]);
 
     const handleQuantityChange = (index, value) => {
