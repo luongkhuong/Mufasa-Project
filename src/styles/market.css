@@ -1,0 +1,145 @@
+.market-body {
+    max-width: 1000px;
+    margin: 20px auto;
+    background: linear-gradient(135deg, #00CED1, #0076CE);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .market-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #F0F8FF;
+    margin-top: 20px;
+  }
+  
+  .market-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .market-table th,
+  .market-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .market-table th {
+    background-color: #F0F8FF;
+    color: #00538C;
+  }
+  
+  .market-table tr {
+    color: rgb(255, 255, 255);
+    height: 60px; /* Ensures consistent row height */
+  }
+  
+  .market-table input[type="number"] {
+    width: 70px;
+    padding: 5px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  /* Checkbox wrapper to help with alignment */
+  .checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  /* Native checkbox fix for Safari */
+  .market-table input[type="checkbox"] {
+    transform: scale(1.2);
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+    top: 1px; /* small nudge for Safari */
+  }
+  
+  /* Buttons */
+  .button-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .btn-market-submit {
+    background: #F0F8FF;
+    border: 1px solid #00538C;
+    padding: 14px 24px;
+    border-radius: 10px;
+    color: rgb(0, 34, 68);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 1px rgba(0, 82, 255, 0.4);
+    cursor: pointer;
+    width: fit-content;
+  }
+  
+  .btn-market-submit:hover {
+    background: linear-gradient(135deg, #013d7d, #00538C);
+    box-shadow: 0 1px 1px rgba(0, 82, 255, 0.6);
+    transform: scale(1.07);
+    color: white;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    margin-top: 15px;
+  }
+  
+  .btn-secondary {
+    background: #F0F8FF;
+    border: 1px solid #494f52;
+    padding: 14px 24px;
+    border-radius: 10px;
+    color: rgb(0, 34, 68);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 1px rgba(0, 82, 255, 0.4);
+    cursor: pointer;
+    width: fit-content;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #6c757d;
+    color: white;
+    transform: scale(1.12);
+  }
+  
+  .checkbox-wrapper:focus,
+  .checkbox-wrapper:active,
+  .checkbox-wrapper input[type="checkbox"]:focus,
+  .checkbox-wrapper input[type="checkbox"]:active {
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+  }
