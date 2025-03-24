@@ -1,6 +1,6 @@
 
 import '../styles/about.css';
-import AboutUsCard from './AboutUsCard.jsx';
+import AboutUsCard from './WhatAboutUs.jsx';
 import contacts from '../assets/contacts.js';
 
 const About = () => {
