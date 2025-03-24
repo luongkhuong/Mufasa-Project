@@ -1,168 +1,75 @@
+.title {
+  font-weight: 1000;
+  text-align: center;
+  margin-bottom: 3rem;
+}
 
-/* 📌 1. Page background */
-
-body {
-    font-family: 'Inter', sans-serif;
-    color: #333; 
-    text-align: center; 
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+    padding: 0vw;
   }
   
-  .about-us-body {
+  .team-card {
+    background: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: rgba(255, 255, 255, 0.2);
-    background-size: 300% 300%;
-    position: relative;
-    overflow: hidden;
-    line-height: 1.6;
-    margin: 0 auto;
-    
-    perspective: 1000px;
-  }
-  
-  
-  /* 📌 2. Page Title */
-  .about-us-title {
+    padding: 1vw;
+    border-radius: 1vw;
+    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.1);
     text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    color: #002244;
-    margin-top: 20px;
+    transition: all 300ms ease-in-out;
+    height: 100%;
+  }
+
+  .team-card:hover {
+    transform: scale(1.05);
+    transition: all 300ms ease-out;
+    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.5);
   }
   
-  .feature-divider {
-    border: solid 1px;
-    display: block;
-    width: 110px;
-    height: 1px;
-    border-right: 0;
-    border-left: 0;
-    border-bottom: 0;
-    margin: 25px auto;
-    border-color: #333;
-  }
-  
-  .about-us-subtitle {
-    font-size: 18px;
-    color: rgba(0, 59, 92, 0.6); 
-    margin-bottom: 16px;
-  }
-  
-  .section-title {
-    font-size: 22px;
-    font-weight: bold;
-    color: #002244;
-    margin-top: 20px;
-  }
-  
-  /* 📌 3. Cards Layout */
-  .cards-container {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    max-width: 90%;
-    margin-top: 30px;
-    margin-bottom: 30px;  
-  }
-  
-  /* 📌 4. Glassmorphic Cards */
-  .card {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
-    backdrop-filter: blur(10px);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 650px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-bottom: 25px;
-    position: relative;
-  }
-  
-  /* 📌 5. Card Hover Effect */
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 82, 255, 0.3);
-  }
-  
-  /* 📌 6. Card Image */
-  .card-img-top {
-    width: 250px;
-    height: 250px;
+  .team-photo {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%;
-    display: block;
-    margin: 0 auto 15px auto;
-    border: 2px solid #e0e0e0; /* optional border ring */
-    background-color: #f5f5f5; /* fallback bg */
+    margin-bottom: 1vw;
+    margin-top: 1vh;
+    transition: transform 300ms ease-in-out;
+  }
+
+  .team-photo:hover {
+    transform: scale(1.1);
+    transition: all 300ms ease-out;
   }
   
-  
-  /* 📌 7. Card Content */
-  .card-body {
-    padding: 25px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+  .team-name {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 0.5vw;
+    min-height: 2vw;
+  }
+
+  .team-position {
+    font-size: 18px;
+    font-weight: 300px;
+    margin: 0px;
+    margin-bottom: 2vh;
+    color:rgba(0, 0, 0, 0.8);
   }
   
-  /* 📌 8. Card Title */
-  .card-title {
-    color: rgb(0, 34, 68);
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 8px;
-  }
-  
-  /* 📌 8. Card Designation */
-  .card-designation {
-    color: #333;
-    font-size: 15px;
-    margin-bottom: 12px;
-  }
-  
-  /* 📌 9. Card Text */
-  .card-text {
-    color: rgba(0, 34, 68, 0.6);
+  .team-description {
     font-size: 16px;
-    line-height: 1.5;
-    overflow: auto;
-    max-height: 140px;
+    color: #555;
     flex-grow: 1;
-  }
-  
-  /* 📌 10. Learn More Button */
-  .btn-primary-about {
-    /*background: linear-gradient(135deg, #003ecb, #0052ff);*/
-    background: #F0F8FF;
-    border: 1px solid #00538C;
-    padding: 14px 24px;
-    border-radius: 10px;
-    color: rgb(0, 34, 68);
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-align: center;
-    font-size: 14px;
-    transition: all 0.3s ease;
-    box-shadow: 0 1px 1px rgba(0, 82, 255, 0.4);
-    cursor: pointer;
-    margin-top: auto;
-    width: fit-content;
-    align-self: center;
-  }
-  
-  .btn-primary-about:hover {
-    background: linear-gradient(135deg, #013d7d, #00538C);
-    box-shadow: 0 1px 1px rgba(0, 82, 255, 0.6);
-    transform: scale(1.07);
-    color: white;
+    display: flex;
+    min-height: 0vw;
   }
   
